@@ -1,0 +1,2 @@
+! [rejected] master -> master (non-fast-forward) : 원격저장소와 로컬 저장소의 공통분모가 없을때 나타나는 오류
+<해결> : git pull origin master --allow-unrelated-histories 명령어치기 -> add -> commit -> push

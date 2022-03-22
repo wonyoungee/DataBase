@@ -1,0 +1,227 @@
+C:\Users\r2com>cd git
+지정된 경로를 찾을 수 없습니다.
+
+C:\Users\r2com>cd Desktop
+
+C:\Users\r2com\Desktop>cd git
+
+C:\Users\r2com\Desktop\git>git init
+Initialized empty Git repository in C:/Users/r2com/Desktop/git/.git/
+
+C:\Users\r2com\Desktop\git>git clone https://github.com/acdacd66/ecount_team2.git
+Cloning into 'ecount_team2'...
+remote: Enumerating objects: 175, done.
+remote: Counting objects: 100% (175/175), done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 175 (delta 75), reused 167 (delta 67), pack-reused 0Receiving objects:  73% (128/175)
+Receiving objects: 100% (175/175), 56.15 KiB | 5.10 MiB/s, done.
+Resolving deltas: 100% (75/75), done.
+
+C:\Users\r2com\Desktop\git>git remote add origin https://github.com/acdacd66/ecount_team2.git
+
+C:\Users\r2com\Desktop\git>git remote -v
+origin  https://github.com/acdacd66/ecount_team2.git (fetch)
+origin  https://github.com/acdacd66/ecount_team2.git (push)
+
+C:\Users\r2com\Desktop\git>git add .
+warning: adding embedded git repository: ecount_team2
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> ecount_team2
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached ecount_team2
+hint:
+hint: See "git help submodule" for more information.
+
+C:\Users\r2com\Desktop\git>cd ecount_team2
+
+C:\Users\r2com\Desktop\git\ecount_team2>cd Won_young
+
+C:\Users\r2com\Desktop\git\ecount_team2\Won_young>cd
+C:\Users\r2com\Desktop\git\ecount_team2\Won_young
+
+C:\Users\r2com\Desktop\git\ecount_team2\Won_young>cd ../
+
+C:\Users\r2com\Desktop\git\ecount_team2>git add Won_young
+
+C:\Users\r2com\Desktop\git\ecount_team2>git commit -m
+error: switch `m' requires a value
+
+C:\Users\r2com\Desktop\git\ecount_team2>
+C:\Users\r2com\Desktop\git\ecount_team2>git commit -m "HW_RSP"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'r2com@DESKTOP-DD3FU43.(none)')
+
+C:\Users\r2com\Desktop\git\ecount_team2>git config --global user.name "wonyoungee"
+
+C:\Users\r2com\Desktop\git\ecount_team2>git config --global user.email "mimiyoo97@naver.com"
+
+C:\Users\r2com\Desktop\git\ecount_team2>git commit -m "HW_RSP"
+[main a493d1b] HW_RSP
+ 16 files changed, 298 insertions(+)
+ create mode 100644 Won_young/BasicFramework/BasicFramework.sln
+ create mode 100644 Won_young/BasicFramework/HW_RSP/App.config
+ create mode 100644 Won_young/BasicFramework/HW_RSP/HW_RSP.csproj
+ create mode 100644 Won_young/BasicFramework/HW_RSP/Program.cs
+ create mode 100644 Won_young/BasicFramework/HW_RSP/Properties/AssemblyInfo.cs
+ create mode 100644 Won_young/BasicFramework/HW_RSP/bin/Debug/HW_RSP.exe
+ create mode 100644 Won_young/BasicFramework/HW_RSP/bin/Debug/HW_RSP.exe.config
+ create mode 100644 Won_young/BasicFramework/HW_RSP/bin/Debug/HW_RSP.pdb
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.AssemblyReference.cache
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.CoreCompileInputs.cache
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.FileListAbsolute.txt
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/HW_RSP.exe
+ create mode 100644 Won_young/BasicFramework/HW_RSP/obj/Debug/HW_RSP.pdb
+
+C:\Users\r2com\Desktop\git\ecount_team2>git push
+info: please complete authentication in your browser...
+To https://github.com/acdacd66/ecount_team2.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/acdacd66/ecount_team2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\r2com\Desktop\git\ecount_team2>git push
+To https://github.com/acdacd66/ecount_team2.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/acdacd66/ecount_team2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\r2com\Desktop\git\ecount_team2>git pull origin master
+fatal: couldn't find remote ref master
+
+C:\Users\r2com\Desktop\git\ecount_team2>git pull origin main
+remote: Enumerating objects: 51, done.
+remote: Counting objects: 100% (51/51), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 42 (delta 9), reused 41 (delta 9), pack-reused 0
+Unpacking objects: 100% (42/42), 19.42 KiB | 160.00 KiB/s, done.
+From https://github.com/acdacd66/ecount_team2
+ * branch            main       -> FETCH_HEAD
+   069c50a..dac497e  main       -> origin/main
+Merge made by the 'ort' strategy.
+ .../BasicFramework/.vs/BasicFramework/v17/.suo     | Bin 19968 -> 76800 bytes
+ Jung_woo/BasicFramework/BasicFramework.sln         |  12 +++
+ Jung_woo/BasicFramework/Ex10_class/Program.cs      |  49 ++++++++-
+ .../BasicFramework/Ex11_class_method/App.config    |   6 ++
+ .../Ex11_class_method/Ex11_class_method.csproj     |  53 ++++++++++
+ .../BasicFramework/Ex11_class_method/Program.cs    |  31 ++++++
+ .../Ex11_class_method/Properties/AssemblyInfo.cs   |  36 +++++++
+ .../bin/Debug/Ex11_class_method.exe                | Bin 0 -> 4608 bytes
+ .../bin/Debug/Ex11_class_method.exe.config         |   6 ++
+ .../bin/Debug/Ex11_class_method.pdb                | Bin 0 -> 22016 bytes
+ ...TFramework,Version=v4.7.2.AssemblyAttributes.cs |   4 +
+ .../DesignTimeResolveAssemblyReferencesInput.cache | Bin 0 -> 6879 bytes
+ ...x11_class_method.csproj.AssemblyReference.cache | Bin 0 -> 4079 bytes
+ ...x11_class_method.csproj.CoreCompileInputs.cache |   1 +
+ .../Ex11_class_method.csproj.FileListAbsolute.txt  |   8 ++
+ ...s_method.csproj.SuggestedBindingRedirects.cache |   0
+ .../obj/Debug/Ex11_class_method.exe                | Bin 0 -> 4608 bytes
+ .../obj/Debug/Ex11_class_method.pdb                | Bin 0 -> 22016 bytes
+ Jung_woo/BasicFramework/Homework/App.config        |   6 ++
+ Jung_woo/BasicFramework/Homework/Homework.csproj   |  53 ++++++++++
+ Jung_woo/BasicFramework/Homework/Program.cs        | 110 +++++++++++++++++++++
+ .../Homework/Properties/AssemblyInfo.cs            |  36 +++++++
+ .../BasicFramework/Homework/bin/Debug/Homework.exe | Bin 0 -> 5632 bytes
+ .../Homework/bin/Debug/Homework.exe.config         |   6 ++
+ .../BasicFramework/Homework/bin/Debug/Homework.pdb | Bin 0 -> 22016 bytes
+ ...TFramework,Version=v4.7.2.AssemblyAttributes.cs |   4 +
+ .../DesignTimeResolveAssemblyReferencesInput.cache | Bin 0 -> 6851 bytes
+ .../Debug/Homework.csproj.AssemblyReference.cache  | Bin 0 -> 4079 bytes
+ .../Debug/Homework.csproj.CoreCompileInputs.cache  |   1 +
+ .../obj/Debug/Homework.csproj.FileListAbsolute.txt |   8 ++
+ ...Homework.csproj.SuggestedBindingRedirects.cache |   0
+ .../BasicFramework/Homework/obj/Debug/Homework.exe | Bin 0 -> 5632 bytes
+ .../BasicFramework/Homework/obj/Debug/Homework.pdb | Bin 0 -> 22016 bytes
+ 33 files changed, 428 insertions(+), 2 deletions(-)
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/App.config
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/Ex11_class_method.csproj
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/Program.cs
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/Properties/AssemblyInfo.cs
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/bin/Debug/Ex11_class_method.exe
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/bin/Debug/Ex11_class_method.exe.config
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/bin/Debug/Ex11_class_method.pdb
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/Ex11_class_method.csproj.AssemblyReference.cache
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/Ex11_class_method.csproj.CoreCompileInputs.cache
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/Ex11_class_method.csproj.FileListAbsolute.txt
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/Ex11_class_method.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/Ex11_class_method.exe
+ create mode 100644 Jung_woo/BasicFramework/Ex11_class_method/obj/Debug/Ex11_class_method.pdb
+ create mode 100644 Jung_woo/BasicFramework/Homework/App.config
+ create mode 100644 Jung_woo/BasicFramework/Homework/Homework.csproj
+ create mode 100644 Jung_woo/BasicFramework/Homework/Program.cs
+ create mode 100644 Jung_woo/BasicFramework/Homework/Properties/AssemblyInfo.cs
+ create mode 100644 Jung_woo/BasicFramework/Homework/bin/Debug/Homework.exe
+ create mode 100644 Jung_woo/BasicFramework/Homework/bin/Debug/Homework.exe.config
+ create mode 100644 Jung_woo/BasicFramework/Homework/bin/Debug/Homework.pdb
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/Homework.csproj.AssemblyReference.cache
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/Homework.csproj.CoreCompileInputs.cache
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/Homework.csproj.FileListAbsolute.txt
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/Homework.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/Homework.exe
+ create mode 100644 Jung_woo/BasicFramework/Homework/obj/Debug/Homework.pdb
+
+C:\Users\r2com\Desktop\git\ecount_team2>git branch wy
+
+C:\Users\r2com\Desktop\git\ecount_team2>git checkout wy
+Switched to branch 'wy'
+
+C:\Users\r2com\Desktop\git\ecount_team2>git add .
+
+C:\Users\r2com\Desktop\git\ecount_team2>git commit
+On branch wy
+nothing to commit, working tree clean
+
+C:\Users\r2com\Desktop\git\ecount_team2>git push
+fatal: The current branch wy has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin wy
+
+
+C:\Users\r2com\Desktop\git\ecount_team2>git push origin wy
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (25/25), 11.33 KiB | 1.89 MiB/s, done.
+Total 25 (delta 0), reused 4 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'wy' on GitHub by visiting:
+remote:      https://github.com/acdacd66/ecount_team2/pull/new/wy
+remote:
+To https://github.com/acdacd66/ecount_team2.git
+ * [new branch]      wy -> wy
+
+C:\Users\r2com\Desktop\git\ecount_team2>

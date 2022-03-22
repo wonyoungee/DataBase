@@ -1,0 +1,259 @@
+C:\Users\r2com>cd Desktop
+
+C:\Users\r2com\Desktop>cd git_C-sharp
+
+C:\Users\r2com\Desktop\git_C-sharp>git init
+Initialized empty Git repository in C:/Users/r2com/Desktop/git_C-sharp/.git/
+
+C:\Users\r2com\Desktop\git_C-sharp>git remote add origin https://github.com/wonyoungee/C-sharp.git
+
+C:\Users\r2com\Desktop\git_C-sharp>git remote -v
+origin  https://github.com/wonyoungee/C-sharp.git (fetch)
+origin  https://github.com/wonyoungee/C-sharp.git (push)
+
+C:\Users\r2com\Desktop\git_C-sharp>git add .
+
+C:\Users\r2com\Desktop\git_C-sharp>git commit -m "3/2"
+[master (root-commit) c5b6230] 3/2
+ 221 files changed, 2698 insertions(+)
+ create mode 100644 BasicFramework/.vs/BasicFramework/v17/.suo
+ create mode 100644 BasicFramework/2_28/2_28.csproj
+ create mode 100644 BasicFramework/2_28/App.config
+ create mode 100644 BasicFramework/2_28/Program.cs
+ create mode 100644 BasicFramework/2_28/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/2_28/bin/Debug/2_28.exe
+ create mode 100644 BasicFramework/2_28/bin/Debug/2_28.exe.config
+ create mode 100644 BasicFramework/2_28/bin/Debug/2_28.pdb
+ create mode 100644 BasicFramework/2_28/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/2_28/obj/Debug/2_28.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/2_28/obj/Debug/2_28.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/2_28/obj/Debug/2_28.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/2_28/obj/Debug/2_28.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/2_28/obj/Debug/2_28.exe
+ create mode 100644 BasicFramework/2_28/obj/Debug/2_28.pdb
+ create mode 100644 BasicFramework/2_28/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/BasicFramework.sln
+ create mode 100644 BasicFramework/Ex01_Basic/App.config
+ create mode 100644 BasicFramework/Ex01_Basic/Ex01_Basic.csproj
+ create mode 100644 BasicFramework/Ex01_Basic/Program.cs
+ create mode 100644 BasicFramework/Ex01_Basic/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex01_Basic/bin/Debug/Ex01_Basic.exe
+ create mode 100644 BasicFramework/Ex01_Basic/bin/Debug/Ex01_Basic.exe.config
+ create mode 100644 BasicFramework/Ex01_Basic/bin/Debug/Ex01_Basic.pdb
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/Ex01_Basic.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/Ex01_Basic.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/Ex01_Basic.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/Ex01_Basic.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/Ex01_Basic.exe
+ create mode 100644 BasicFramework/Ex01_Basic/obj/Debug/Ex01_Basic.pdb
+ create mode 100644 BasicFramework/Ex02_Basic/App.config
+ create mode 100644 BasicFramework/Ex02_Basic/Ex02_Basic.csproj
+ create mode 100644 BasicFramework/Ex02_Basic/Program.cs
+ create mode 100644 BasicFramework/Ex02_Basic/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex02_Basic/bin/Debug/Ex02_Basic.exe
+ create mode 100644 BasicFramework/Ex02_Basic/bin/Debug/Ex02_Basic.exe.config
+ create mode 100644 BasicFramework/Ex02_Basic/bin/Debug/Ex02_Basic.pdb
+ create mode 100644 BasicFramework/Ex02_Basic/bin/Debug/Ex03_EmpLib.dll
+ create mode 100644 BasicFramework/Ex02_Basic/bin/Debug/Ex03_EmpLib.pdb
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/Ex02_Basic.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/Ex02_Basic.csproj.CopyComplete
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/Ex02_Basic.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/Ex02_Basic.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/Ex02_Basic.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/Ex02_Basic.exe
+ create mode 100644 BasicFramework/Ex02_Basic/obj/Debug/Ex02_Basic.pdb
+ create mode 100644 BasicFramework/Ex03_EmpLib/Emp.cs
+ create mode 100644 BasicFramework/Ex03_EmpLib/Ex03_EmpLib.csproj
+ create mode 100644 BasicFramework/Ex03_EmpLib/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex03_EmpLib/bin/Debug/Ex03_EmpLib.dll
+ create mode 100644 BasicFramework/Ex03_EmpLib/bin/Debug/Ex03_EmpLib.pdb
+ create mode 100644 BasicFramework/Ex03_EmpLib/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex03_EmpLib/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex03_EmpLib/obj/Debug/Ex03_EmpLib.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex03_EmpLib/obj/Debug/Ex03_EmpLib.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex03_EmpLib/obj/Debug/Ex03_EmpLib.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex03_EmpLib/obj/Debug/Ex03_EmpLib.dll
+ create mode 100644 BasicFramework/Ex03_EmpLib/obj/Debug/Ex03_EmpLib.pdb
+ create mode 100644 BasicFramework/Ex04_RefType/App.config
+ create mode 100644 BasicFramework/Ex04_RefType/Ex04_RefType.csproj
+ create mode 100644 BasicFramework/Ex04_RefType/Program.cs
+ create mode 100644 BasicFramework/Ex04_RefType/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex04_RefType/bin/Debug/Ex04_RefType.exe
+ create mode 100644 BasicFramework/Ex04_RefType/bin/Debug/Ex04_RefType.exe.config
+ create mode 100644 BasicFramework/Ex04_RefType/bin/Debug/Ex04_RefType.pdb
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/Ex04_RefType.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/Ex04_RefType.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/Ex04_RefType.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/Ex04_RefType.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/Ex04_RefType.exe
+ create mode 100644 BasicFramework/Ex04_RefType/obj/Debug/Ex04_RefType.pdb
+ create mode 100644 BasicFramework/Ex05_ValueType/App.config
+ create mode 100644 BasicFramework/Ex05_ValueType/Ex05_ValueType.csproj
+ create mode 100644 BasicFramework/Ex05_ValueType/Program.cs
+ create mode 100644 BasicFramework/Ex05_ValueType/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex05_ValueType/bin/Debug/Ex05_ValueType.exe
+ create mode 100644 BasicFramework/Ex05_ValueType/bin/Debug/Ex05_ValueType.exe.config
+ create mode 100644 BasicFramework/Ex05_ValueType/bin/Debug/Ex05_ValueType.pdb
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/Ex05_ValueType.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/Ex05_ValueType.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/Ex05_ValueType.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/Ex05_ValueType.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/Ex05_ValueType.exe
+ create mode 100644 BasicFramework/Ex05_ValueType/obj/Debug/Ex05_ValueType.pdb
+ create mode 100644 BasicFramework/Ex06_Opr/App.config
+ create mode 100644 BasicFramework/Ex06_Opr/Ex06_Opr.csproj
+ create mode 100644 BasicFramework/Ex06_Opr/Program.cs
+ create mode 100644 BasicFramework/Ex06_Opr/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex06_Opr/bin/Debug/Ex06_Opr.exe
+ create mode 100644 BasicFramework/Ex06_Opr/bin/Debug/Ex06_Opr.exe.config
+ create mode 100644 BasicFramework/Ex06_Opr/bin/Debug/Ex06_Opr.pdb
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/Ex06_Opr.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/Ex06_Opr.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/Ex06_Opr.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/Ex06_Opr.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/Ex06_Opr.exe
+ create mode 100644 BasicFramework/Ex06_Opr/obj/Debug/Ex06_Opr.pdb
+ create mode 100644 BasicFramework/Ex07_Statement/App.config
+ create mode 100644 BasicFramework/Ex07_Statement/Ex07_Statement.csproj
+ create mode 100644 BasicFramework/Ex07_Statement/Program.cs
+ create mode 100644 BasicFramework/Ex07_Statement/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex07_Statement/bin/Debug/Ex07_Statement.exe
+ create mode 100644 BasicFramework/Ex07_Statement/bin/Debug/Ex07_Statement.exe.config
+ create mode 100644 BasicFramework/Ex07_Statement/bin/Debug/Ex07_Statement.pdb
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/Ex07_Statement.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/Ex07_Statement.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/Ex07_Statement.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/Ex07_Statement.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/Ex07_Statement.exe
+ create mode 100644 BasicFramework/Ex07_Statement/obj/Debug/Ex07_Statement.pdb
+ create mode 100644 BasicFramework/Ex08_Statement2/App.config
+ create mode 100644 BasicFramework/Ex08_Statement2/Ex08_Statement2.csproj
+ create mode 100644 BasicFramework/Ex08_Statement2/Program.cs
+ create mode 100644 BasicFramework/Ex08_Statement2/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex08_Statement2/bin/Debug/Ex08_Statement2.exe
+ create mode 100644 BasicFramework/Ex08_Statement2/bin/Debug/Ex08_Statement2.exe.config
+ create mode 100644 BasicFramework/Ex08_Statement2/bin/Debug/Ex08_Statement2.pdb
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/Ex08_Statement2.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/Ex08_Statement2.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/Ex08_Statement2.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/Ex08_Statement2.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/Ex08_Statement2.exe
+ create mode 100644 BasicFramework/Ex08_Statement2/obj/Debug/Ex08_Statement2.pdb
+ create mode 100644 BasicFramework/Ex08_Statement3/App.config
+ create mode 100644 BasicFramework/Ex08_Statement3/Ex09_Statement3.csproj
+ create mode 100644 BasicFramework/Ex08_Statement3/Program.cs
+ create mode 100644 BasicFramework/Ex08_Statement3/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex08_Statement3/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex08_Statement3/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex08_Statement3/obj/Debug/Ex08_Statement3.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex08_Statement3/obj/Debug/Ex09_Statement3.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex10_Class/App.config
+ create mode 100644 BasicFramework/Ex10_Class/Ex10_Class.csproj
+ create mode 100644 BasicFramework/Ex10_Class/Program.cs
+ create mode 100644 BasicFramework/Ex10_Class/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex10_Class/bin/Debug/Ex10_Class.exe
+ create mode 100644 BasicFramework/Ex10_Class/bin/Debug/Ex10_Class.exe.config
+ create mode 100644 BasicFramework/Ex10_Class/bin/Debug/Ex10_Class.pdb
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/Ex10_Class.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/Ex10_Class.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/Ex10_Class.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/Ex10_Class.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/Ex10_Class.exe
+ create mode 100644 BasicFramework/Ex10_Class/obj/Debug/Ex10_Class.pdb
+ create mode 100644 BasicFramework/Ex11_Class_method/App.config
+ create mode 100644 BasicFramework/Ex11_Class_method/Ex11_Class_method.csproj
+ create mode 100644 BasicFramework/Ex11_Class_method/Program.cs
+ create mode 100644 BasicFramework/Ex11_Class_method/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Ex11_Class_method/bin/Debug/Ex11_Class_method.exe
+ create mode 100644 BasicFramework/Ex11_Class_method/bin/Debug/Ex11_Class_method.exe.config
+ create mode 100644 BasicFramework/Ex11_Class_method/bin/Debug/Ex11_Class_method.pdb
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/Ex11_Class_method.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/Ex11_Class_method.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/Ex11_Class_method.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/Ex11_Class_method.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/Ex11_Class_method.exe
+ create mode 100644 BasicFramework/Ex11_Class_method/obj/Debug/Ex11_Class_method.pdb
+ create mode 100644 BasicFramework/HW_Money/App.config
+ create mode 100644 BasicFramework/HW_Money/HW_Money.csproj
+ create mode 100644 BasicFramework/HW_Money/Program.cs
+ create mode 100644 BasicFramework/HW_Money/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/HW_Money/bin/Debug/HW_Money.exe
+ create mode 100644 BasicFramework/HW_Money/bin/Debug/HW_Money.exe.config
+ create mode 100644 BasicFramework/HW_Money/bin/Debug/HW_Money.pdb
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/HW_Money.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/HW_Money.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/HW_Money.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/HW_Money.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/HW_Money.exe
+ create mode 100644 BasicFramework/HW_Money/obj/Debug/HW_Money.pdb
+ create mode 100644 BasicFramework/HW_RSP/App.config
+ create mode 100644 BasicFramework/HW_RSP/HW_RSP.csproj
+ create mode 100644 BasicFramework/HW_RSP/Program.cs
+ create mode 100644 BasicFramework/HW_RSP/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/HW_RSP/bin/Debug/HW_RSP.exe
+ create mode 100644 BasicFramework/HW_RSP/bin/Debug/HW_RSP.exe.config
+ create mode 100644 BasicFramework/HW_RSP/bin/Debug/HW_RSP.pdb
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/HW_RSP.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/HW_RSP.exe
+ create mode 100644 BasicFramework/HW_RSP/obj/Debug/HW_RSP.pdb
+ create mode 100644 BasicFramework/Star/App.config
+ create mode 100644 BasicFramework/Star/Program.cs
+ create mode 100644 BasicFramework/Star/Properties/AssemblyInfo.cs
+ create mode 100644 BasicFramework/Star/Star.csproj
+ create mode 100644 BasicFramework/Star/bin/Debug/Star.exe
+ create mode 100644 BasicFramework/Star/bin/Debug/Star.exe.config
+ create mode 100644 BasicFramework/Star/bin/Debug/Star.pdb
+ create mode 100644 BasicFramework/Star/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ create mode 100644 BasicFramework/Star/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 BasicFramework/Star/obj/Debug/Star.csproj.AssemblyReference.cache
+ create mode 100644 BasicFramework/Star/obj/Debug/Star.csproj.CoreCompileInputs.cache
+ create mode 100644 BasicFramework/Star/obj/Debug/Star.csproj.FileListAbsolute.txt
+ create mode 100644 BasicFramework/Star/obj/Debug/Star.csproj.SuggestedBindingRedirects.cache
+ create mode 100644 BasicFramework/Star/obj/Debug/Star.exe
+ create mode 100644 BasicFramework/Star/obj/Debug/Star.pdb
+
+C:\Users\r2com\Desktop\git_C-sharp>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\r2com\Desktop\git_C-sharp>git push origin master
+Enumerating objects: 207, done.
+Counting objects: 100% (207/207), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (155/155), done.
+Writing objects: 100% (207/207), 74.97 KiB | 1.92 MiB/s, done.
+Total 207 (delta 97), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (97/97), done.
+To https://github.com/wonyoungee/C-sharp.git
+ * [new branch]      master -> master
+
+C:\Users\r2com\Desktop\git_C-sharp>
