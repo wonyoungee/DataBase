@@ -1,3 +1,4 @@
+use KosaDB
 /*
 CREATE TABLE EMP
 (EMPNO int not null,
@@ -72,8 +73,8 @@ INSERT INTO SALGRADE VALUES (5,3001,9999);
 select * from EMP;
 select * from DEPT;
 select * from SALGRADE;
-
 */
+
 
 /*
  # DDL(Data Definition Language): 데이터 정의 언어, 데이터베이스 "개체" 의 생성/변경/삭제을 목적으로 사용하는 언어
@@ -633,3 +634,180 @@ select job, sum(sal) 총월급 from emp where job != 'MANAGER' group by job having 
 -- 직위와 최대월급을 최대 월급이 높은 순으로 정렬하여 
 -- 출력하라.
 select job, max(sal) 최대월급 from emp where job != 'CLERK' group by job having max(sal)>=2000 order by 최대월급 desc
+
+
+
+
+
+/******************* JOIN *******************/
+-- 조인 실습 테이블 만들기
+/*
+CREATE TABLE M
+(M1 CHAR(6), M2 VARCHAR(10))
+
+CREATE TABLE S
+(S1 CHAR(6), S2 VARCHAR(10))
+
+CREATE TABLE X
+(X1 CHAR(6), X2 VARCHAR(10))
+*/
+ 
+
+INSERT INTO M VALUES('A','1')
+INSERT INTO M VALUES('B','1')
+INSERT INTO M VALUES('C','3')
+INSERT INTO M VALUES(NULL, '3')
+
+INSERT INTO S VALUES('A','X')
+INSERT INTO S VALUES('B','Y')
+INSERT INTO S VALUES(NULL, 'Z')
+ 
+INSERT INTO X VALUES('A','DATA')
+
+select * from m
+select * from s
+select * from x
+
+-- # 조인 : 한 개 이상의 테이블에서 데이터를 가져오는 방법
+-- <종류>
+-- 1. inner join
+-- 2. cross join
+-- 3. outer join
+-- 4. self join
+-- 5. nonequal join
+
+-- <표현법>
+-- 각 벤더 (oracle, mysql, mssql) 문법이 존재
+-- 표준문법 : ansi 문법 ^^
+
+-- !! null끼리는 join (X)
+
+/*** 1. inner join ***/
+-- 각 테이블의 조인컬럼(공통컬럼)을 비교하여 조인조건을 만족하는 레코드만 선택
+-- 1:1 맵핑 ... 옆으로 붙이는 것...
+
+-- SQL 문법 -> 바람직하지 X
+select * from m, s where m1=s1
+
+select m1, m2, s2
+from m, s
+where m1=s1
+
+-- ANSI 문법 -> 이거 사용!
+select * from m inner join s on m1=s1	-- on은 join의 조건절
+select m.M1, m.M2, s.S1, s.S2 from m inner join s on m.M1=s.S1	-- 가장 좋은 표현법
+
+-- 사원테이블에서 사번, 이름, 부서번호, 부서이름을 출력하세요.
+select * from emp
+select * from dept
+
+select emp.EMPNO, emp.ENAME, emp.DEPTNO, dept.DNAME
+from emp inner join dept
+on emp.DEPTNO = dept.DEPTNO
+
+-- join의 default : inner join
+-- alias 붙이면 편함
+select e.EMPNO, e.ENAME, e.DEPTNO, d.DNAME
+from emp e  join dept d	-- inner join
+on e.DEPTNO = d.DEPTNO
+
+
+
+/*** 2. cross join (거의 안쓰는 조인) ***/
+-- 조건이 없는 조인. 모든 확률을 다 뽑는 것.
+select * from m,s
+
+-- ANSI
+select * from m cross join s
+
+
+
+/*** 3. outer join ***/
+-- 조인에 만족하지 않는 데이터가 생성
+-- 내부적으로 inner join을 선행하고, 주종관계를 파악해서 남는 데이터를 가져오는 방법
+-- 주종관계 : left, right 으로 파악
+select * 
+from m left outer join s	-- m을 기준으로 남는 데이터 가져옴
+on m.m1 = s.s1
+
+select * 
+from m right outer join s	-- s를 기준으로 남는 데이터 가져옴
+on m.m1 = s.s1
+
+-- full outer join
+select *
+from m full outer join s	-- left join과 right join의 union(합집합)
+on m.M1=s.S1
+
+
+
+-------------------- union (합집합) ---------------------------
+
+-- 1. 대응되는 컬럼의 수가 일치하여야 한다.
+-- 2. 대응되는 컬럼의 자료형(타입) 일치
+-- data를 밑으로 붙임.
+-- 첫번째 테이블 밑에 두번째 테이블이 붙여짐.
+
+select empno, ename from emp
+union
+select deptno, dname from dept
+
+-- error!! 대응되는 컬럼의 수가 일치 X이기 때문...
+select empno, ename, job from emp
+union
+select deptno, dname from dept
+
+-- null 로 해결!
+select empno, ename, job from emp
+union
+select deptno, dname, null from dept
+
+-- error!! 대응되는 컬럼의 타입이 일치해야함...
+select ename, empno from emp	-- ename은 varchar
+union
+select deptno, dname from dept	-- deptno는 int
+
+select * from emp
+union				-- union : 기본적으로 중복제거
+select * from emp
+
+select * from emp
+union all			-- union all : 중복제거 X
+select * from emp
+
+--------------------------------------------------------------
+
+/*** 4. self join ***/
+-- 자신의 특정 컬럼이 자신의 특정 컬럼을 참조
+-- 한 개의 테이블을 2개 처럼 사용
+
+--  사번, 이름, 관리자사번, 관리자 이름을 출력하세요.
+select e.EMPNO, e.ENAME, m.EMPNO, m.ENAME
+from emp e inner join emp m	-- 가명칭을 통해 하나의 테이블을 2개처럼 사용
+on e.MGR=m.EMPNO
+-- 문제 발생 : 사원은 14명인데 현재 데이터는 13명
+-- null이 join의 대상이 아니어서 생기는 문제
+-- [outer join]을 통해 문제해결!
+select e.EMPNO, e.ENAME, m.EMPNO, m.ENAME
+from emp e left outer join emp m	-- 가명칭을 통해 하나의 테이블을 2개처럼 사용
+on e.MGR=m.EMPNO
+
+
+
+/*** 5. nonequal join ***/
+-- join의 원칙은 1:1 맵핑
+-- 동등한 컬럼이 없을 때는 nonequal을 사용하여 여러 개의 컬럼을 맵핑
+
+-- between과 inner join 사용...
+select e.EMPNO, e.ENAME, e.SAL, s.GRADE
+from emp e inner join SALGRADE s
+on e.SAL between s.LOSAL and s.HISAL
+
+
+/*********** 테이블 2, 3, 4개 조인하기 **************/
+
+-- 3개 테이블 조인하기
+select m.m1, m.m2, s.s2, x.x2
+from m join s on m.m1 = s.s1
+	   join x on s.s1 = x.x1
+
